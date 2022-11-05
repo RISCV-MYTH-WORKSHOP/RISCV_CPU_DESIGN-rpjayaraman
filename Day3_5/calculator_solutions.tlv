@@ -24,11 +24,11 @@
          $prod[31:0] = $val1[31:0] * $val2[31:0];
          $quot [31:0] = $val1[31:0] / $val2[31:0];
          
-         $valid = $reset ? 0 : (>>1$valid + 1);
+         $enable_sig = $reset ? 0 : (>>1$enable_sig + 1);
          
       @2
          
-         $out[31:0] = ($reset || !$valid) ? 32'b0 : (($op[1:0]==2'b00) ? $sum :
+         $out[31:0] = ($reset || !$enable_sig) ? 32'b0 : (($op[1:0]==2'b00) ? $sum :
                                  ($op[1:0]==2'b01) ? $diff :
                                  ($op[1:0]==2'b10) ? $prod : 
                                  $quot);
