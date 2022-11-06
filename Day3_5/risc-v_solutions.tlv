@@ -110,8 +110,8 @@
             $rf_rd_index2[4:0] = $rs2[4:0];
          
          //Assigning values to register output value to src1/src2 which is input to ALU
-         $src1_value [31:0] = $rf_rd_data1[31:0];
-         $src2_value [31:0] = $rf_rd_data2[31:0];
+         $src1_value[31:0] = $rf_rd_data1[31:0];
+         $src2_value[31:0] = $rf_rd_data2[31:0];
          
          //ALU
          
@@ -145,7 +145,7 @@
 
    
    // Assert these to end simulation (before Makerchip cycle limit).
-   *passed = *cyc_cnt > 40;
+   *passed = |cpu/xreg[10]>>5$value == (1+2+3+4+5+6+7+8+9);
    *failed = 1'b0;
    
    // Macro instantiations for:
