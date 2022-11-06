@@ -94,6 +94,20 @@
          $is_bltu = $dec_bits ==? 11'bx_110_1100011;
          $is_bgeu = $dec_bits ==? 11'bx_111_1100011;
          
+         //Register file read 
+         ?$rs1_valid
+            $rf_rd_en1 = $rs1_valid;
+            $rf_rd_index1[4:0] = $rs1[4:0];
+         ?$rs2_valid
+            $rf_rd_en2 = $rs2_valid;
+            $rf_rd_index2[4:0] = $rs2[4:0];
+         
+         //Assigning values to register output value to src1/src2 which is input to ALU
+         $src1_value [31:0] = $rf_rd_data1[31:0];
+         $src2_value [31:0] = $rf_rd_data2[31:0];
+         
+   
+         
          // To quite the warnings for the above signal use BOGUS_USE macro
          `BOGUS_USE($is_beq $is_bne $is_blt $is_bge $is_bltu $is_bgeu)
                        
@@ -115,7 +129,7 @@
    //  o CPU visualization
    |cpu
       m4+imem(@1)    // Args: (read stage)
-      //m4+rf(@1, @1)  // Args: (read stage, write stage) - if equal, no register bypass is required
+      m4+rf(@1, @1)  // Args: (read stage, write stage) - if equal, no register bypass is required
       //m4+dmem(@4)    // Args: (read/write stage)
    
    m4+cpu_viz(@4)    // For visualisation, argument should be at least equal to the last stage of CPU logic. @4 would work for all labs.
