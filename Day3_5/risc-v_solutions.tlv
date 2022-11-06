@@ -111,6 +111,13 @@
          $result[31:0] = $is_addi ? $src1_value + $imm :
                          $is_add ? $src1_value + $src2_value : 32'bx;
    
+         //Register file write
+         //Check rd(dest register is 0), since X0 is hardwired to zero
+         $rf_wr_en = ($rd == 5'b0) ? 1'b0 : $rd_valid;
+         ?$rf_wr_en
+            $rf_wr_index[4:0] = $rd[4:0];
+            
+         $rf_wr_data[31:0] = $result[31:0];
          
          // To quite the warnings for the above signal use BOGUS_USE macro
          `BOGUS_USE($is_beq $is_bne $is_blt $is_bge $is_bltu $is_bgeu)
