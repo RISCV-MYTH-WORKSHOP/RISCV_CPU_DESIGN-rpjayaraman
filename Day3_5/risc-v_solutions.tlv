@@ -41,10 +41,13 @@
       @0
          $reset = *reset;
          
-         $pc[31:0] = >>1$reset ? 32'b0 : (>>1$pc + 32'd4); //Program counter 
+         //Program counter 
+         $pc[31:0] = >>1$reset ? 32'b0 : (>>1$taken_br) ? (>>1$br_tgt_pc) : (>>1$pc + 32'd4); 
          
+                     
          //Instruction Memory: I/p -> en (!reset), addr (from pc)
          //							 o/p -> Instruction (which will be sent to Decode)
+         
          $imem_rd_en = >>1$reset ? 1'b0 : 1'b1;
          $imem_rd_addr[M4_IMEM_INDEX_CNT-1:0] = $pc[M4_IMEM_INDEX_CNT+1:2];
          
@@ -93,6 +96,8 @@
          $is_bge = $dec_bits ==? 11'bx_101_1100011;
          $is_bltu = $dec_bits ==? 11'bx_110_1100011;
          $is_bgeu = $dec_bits ==? 11'bx_111_1100011;
+         $is_add = $dec_bits ==? 11'b0_000_0110011;
+         $is_addi = $dec_bits ==? 11'bx_000_0010011;
          
          //Register file read 
          ?$rs1_valid
@@ -118,7 +123,15 @@
             $rf_wr_index[4:0] = $rd[4:0];
             
          $rf_wr_data[31:0] = $result[31:0];
-         
+         // Branch
+         $taken_br = $is_beq ? ($src1_value == $src2_value) :
+                     $is_bne ? ($src1_value != $src2_value) :
+                     $is_blt ? (($src1_value < $src2_value) ^ ($src1_value[31] != $src2_value[31])) :
+                     $is_bge ? (($src1_value >= $src2_value) ^ ($src1_value[31] != $src2_value[31])) :
+                     $is_bltu ? ($src1_value < $src2_value) :
+                     $is_bgeu ? ($src1_value >= $src2_value) : 1'b0;
+                     
+         $br_tgt_pc = $pc + $imm;
          // To quite the warnings for the above signal use BOGUS_USE macro
          `BOGUS_USE($is_beq $is_bne $is_blt $is_bge $is_bltu $is_bgeu)
                        
