@@ -35,7 +35,10 @@ To view assembly code use the below command,
 ```
 riscv64-unknown-elf-objdump -d <object filename>
 ```
+Below is the output of object dump captured when debugging the printf address. 
 ![Obj_when_debugging_printf](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Obj.png)
+
+
 To use SPIKE simualtor to run risc-v obj file use the below command,
 ```
 spike pk <object filename>
@@ -55,4 +58,4 @@ ABI is also called as system call interface used by the application program to a
 
 There are around 32 registers in RISCV ISA, since only 5-bits are alloted for registers. Other than x0 (which is hardwired to zero) remaining registers are good to use.
 
-  
+
