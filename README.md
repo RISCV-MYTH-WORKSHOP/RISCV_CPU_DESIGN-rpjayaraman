@@ -35,7 +35,7 @@ To view assembly code use the below command,
 ```
 riscv64-unknown-elf-objdump -d <object filename>
 ```
-
+![Obj_when_debugging_printf](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Obj.png)
 To use SPIKE simualtor to run risc-v obj file use the below command,
 ```
 spike pk <object filename>
@@ -49,6 +49,10 @@ spike -d pk <object Filename> with degub command as until pc 0 <pc of your choic
 
 Words from [wiki](https://en.wikipedia.org/wiki/Application_binary_interface) In computer software, an application binary interface (ABI) is an interface between two binary program modules. Often, one of these modules is a library or operating system facility, and the other is a program that is being run by a user.
 ABI is also called as system call interface used by the application program to access the registers specific to architecture. Since the MYTH workshop is using RISC-V architecture, it is good to know the register details in detail. 
+
+
 ![ABI](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/ABI-Image.png)
+
+There are around 32 registers in RISCV ISA, since only 5-bits are alloted for registers. Other than x0 (which is hardwired to zero) remaining registers are good to use.
 
   
