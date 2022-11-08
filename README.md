@@ -138,6 +138,27 @@ Below is snapshot of 2-cycle calculator which clears the output alternatively an
 
   ![validity](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/cycle_calculator_with_validity.PNG)
 
+## 5. Basic RISC-V CPU micro-architecture
 
-
+  Designing the basic processor of 3 stages Fetch -> Decode -> Execute based on RISC-V ISA.
+  If a processor is mentioned as single cycle processor then it is capable of executing **Fetch -> Decode -> Execute** all instruction in a single cycle. 
+  ![CPU micro-architecture](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/riscv_uA.PNG)
+  
+  ### Fetch 
+  
+    Program Counter (PC): Holds the address of next Instruction
+    Instruction Memory (IM): Holds the set of instructions to be executed
+  
+  During fetch stage, processor fetch instruction from IM directed by PC.
+  ![Fetch](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Day4-Imem.PNG)
+  
+  ### Decode 
+    
+    
+   In this stage  
+  ![Decode](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Day-4-Decode.PNG)
+  
+  
+  
+    
 
