@@ -17,8 +17,12 @@ This repository is the outcome of RISC-V MYTH (Microprocessor for You in Thirty 
       4.3 [Calculator - sequential Logic](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/README.md#43-calculator---sequential-logic)
       
       4.4 [Pipeline in Calculator](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/README.md#44-pipelined-logic)
-      4.5 [Validity in calculator](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#45-validity)
 
+
+      4.5 [Validity in calculator](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#45-validity)
+      
+5. [Basic RISC-V CPU micro-architecture](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#5-basic-risc-v-cpu-micro-architecture)
+6. ![Acknowledgements] (https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#acknowledgements)
 
 ## 1. Introduction to RISC-V ISA
   ISA (Instruction Set Architecture ) defines the set of basic operations defines how the CPU is controlled by software. It is an interface between hardware and software. 
@@ -167,4 +171,29 @@ Below is snapshot of 2-cycle calculator which clears the output alternatively an
    
   ![ALU](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Day4-Alu.PNG)
 
+After implementing the Branch, control logic and after some debugging got the expected output from the C program which is 45 (sum of numbers from 1 to 9).
+
+Then we started updating the code with pipeline logic and self checking condition
+   *passed = |cpu/xreg[15]>>5$value == (1+2+3+4+5+6+7+8+9);
+
+Finally added the remaining Arithmetic, Branch, Load, Jump instruction we completed the RISC V CPU design. 
+Makechip IDE: ![RISC V CPU](https://makerchip.com/sandbox/04xfJhN3W/0zmhGmo#)
+Final Code : ![CPU](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Day3_5/risc-v_solutions.tlv)
+
+![VIZ](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Final_VIZ.PNG)
+![waveform](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Final-wave.PNG)
+![dig1](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Final_dig_1.PNG)
+![dig2](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Final_dig_2.PNG)
+![dig3](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Final_dig_3.PNG)
+
+
+# Acknowledgements
+
+[Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
+
+
+[Steve Hoover](https://github.com/stevehoover), Founder, Redwood EDA
+
+
+[Shivam Potdar](https://github.com/shivampotdar), GSoC 2020 @fossi-foundation
 
