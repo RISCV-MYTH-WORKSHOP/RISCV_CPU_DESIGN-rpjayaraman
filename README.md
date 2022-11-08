@@ -70,11 +70,23 @@ All the examples shown below are done on Makerchip IDE using TL-verilog. Also th
 ### 4.1 Playing with Makerchip
   Before start playing the game (Designing a RISC-V CPU) it is good to know/familiarize with the ground (IDE). So we were tasked to design some basic logic gates using TL-Verilog and explore the options/features in the makerchip platform.   
 Designed gates such as Inverted, Operations on gates, vector ,counter and Mux. 
+
+Inverter 
 ![Inverter](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/A-Inverter.PNG)
+
+Operations on gates
 ![logic_operation](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/B-Logic_gates.PNG)
+
+Vector 
 ![vector](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/C-Vector.PNG)
+
+MUX
 ![mux](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Mux.PNG)
+
+MUX with Vector
 ![mux_with_vector](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Mux_vector.PNG)
+
+Free running counter 
 ![counter](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Free-running-counter.PNG)
 
   
