@@ -179,7 +179,11 @@ Then we started updating the code with pipeline logic and self checking conditio
    *passed = |cpu/xreg[15]>>5$value == (1+2+3+4+5+6+7+8+9);
 
 Finally added the remaining Arithmetic, Branch, Load, Jump instruction we completed the RISC V CPU design. 
+
+
 Makechip IDE: [RISC V CPU](https://makerchip.com/sandbox/04xfJhN3W/0zmhGmo#)
+
+
 Final Code : [CPU](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Day3_5/risc-v_solutions.tlv)
 
 ![VIZ](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Final_VIZ.PNG)
