@@ -105,6 +105,16 @@ Free running counter
 Below is the snapshot of calculator with combinational logic.
 ![combinational_logic](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Calculator_coninational_logic.PNG)
 
-
+## 4.3 Calculator - sequential Logic
+  To get started on the sequential logic, before implementing in calculator we implemented in fibonacci series as below: 
+  
+  ![Fibonacci_series](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Fibonacci_tlv.PNG)
+  
+  Interesting thing about one of the operators used above ">>n" is ahead operator. which will provide the value of that signal n cycle before.
+  Coming back to sequential calculator, used the above mentioned ahead operator to calculate the previous output in as input (Line 16)
+  
+  ![seqential_calculator](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Sequential_calculator.PNG)
+  
+  
 
 
