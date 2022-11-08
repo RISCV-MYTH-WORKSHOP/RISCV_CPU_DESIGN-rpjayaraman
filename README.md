@@ -6,6 +6,8 @@ This repository is the outcome of RISC-V MYTH (Microprocessor for You in Thirty 
 ## TABLE OF CONTENTS
 1. [Introduction to RISC-V ISA](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#1-introduction-to-risc-v-isa)
 2. [GNU Compiler Toolchain](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#gnu-compiler-toolchain)
+3. [Introduction to ABI](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#3-introduction-to-abi)
+4. [Digital Logic with TL-Verilog and Makerchip](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#4-digital-logic-with-tl-verilog-and-makerchip)
 
 ## 1. Introduction to RISC-V ISA
   ISA (Instruction Set Architecture ) defines the set of basic operations defines how the CPU is controlled by software. It is an interface between hardware and software. 
@@ -58,4 +60,8 @@ ABI is also called as system call interface used by the application program to a
 
 There are around 32 registers in RISCV ISA, since only 5-bits are alloted for registers. Other than x0 (which is hardwired to zero) remaining registers are good to use.
 
+## 4. Digital Logic with TL-Verilog and Makerchip
 
+[Makerchip](https://makerchip.com/) is a free online environment for developing high-quality integrated circuits. You can code, compile, simulate, and debug Verilog designs, all from your browser. Your code, block diagrams, and waveforms are tightly integrated.
+
+All the examples shown below are done on Makerchip IDE using TL-verilog. Also there are other tutorials present on IDE which can be found [here](https://makerchip.com/sandbox/) under Tutorials section.
