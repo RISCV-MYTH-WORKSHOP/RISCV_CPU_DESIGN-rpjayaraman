@@ -155,10 +155,16 @@ Below is snapshot of 2-cycle calculator which clears the output alternatively an
   ### Decode 
     
     
-   In this stage  
+   In this stage, the instruction fetched from the previous stage is dismantled in decode stage. It will decode into opcode, immediate value, source address and destination address. decode happens based on the instruction format and types of instruction.
+   
+   
   ![Decode](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Day-4-Decode.PNG)
   
   
+  ### Execute
   
-    
+   In this stage, based on the opcode, respectice operation is performed on the sorce and destination register. Initally we implemented ADD and ADDI to make the sum of 1 to n C program running on the top of the RSIC V cpu that we are developing. 
+   
+  ![ALU](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Day4-Alu.PNG)
+
 
