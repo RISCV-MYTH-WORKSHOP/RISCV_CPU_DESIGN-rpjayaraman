@@ -14,6 +14,9 @@ This repository is the outcome of RISC-V MYTH (Microprocessor for You in Thirty 
       4.2 [Calculator - Combinational Logic](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#42-calculator---combinational-logic)
 
 
+      4.3 [Calculator - sequential Logic](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/README.md#43-calculator---sequential-logic)
+
+
 ## 1. Introduction to RISC-V ISA
   ISA (Instruction Set Architecture ) defines the set of basic operations defines how the CPU is controlled by software. It is an interface between hardware and software. 
   
@@ -115,6 +118,23 @@ Below is the snapshot of calculator with combinational logic.
   
   ![seqential_calculator](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Sequential_calculator.PNG)
   
+## 4.4 Pipelined logic
+  Timing abstract powerful feature of TL-Verilog which converts a code into pipeline stages easily. Whole code under |pipe scope with stages defined as @?
+
+Below is snapshot of 2-cycle calculator which clears the output alternatively and output of given inputs are observed at the next cycle.
+
+![pipline_cal](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/cycle_calculator.PNG)
+
+## 4.5 Validity 
   
+  ```
+  ?valid 
+  ```
+  This validty executes the block (whithin their scope) when it is true. This operator provides easier debug, cleaner design, better error checking, automated clock gating.
+  Below is 2-cycle with validity 
+
+  ![validity](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/cycle_calculator_with_validity.PNG)
+
+
 
 
