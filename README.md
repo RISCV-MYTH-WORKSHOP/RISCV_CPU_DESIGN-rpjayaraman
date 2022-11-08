@@ -28,12 +28,14 @@ More generic command with different options:
 ```
 riscv64-unknown-elf-gcc <compiler option -O1 ; Ofast> <ABI specifier -lp64; -lp32; -ilp32> <architecture specifier -RV64 ; RV32> -o <object filename> <C filename>
 ```
+![Ofast_command](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Ofast.PNG)
 More details on compiler options can be obtained here
 
 To view assembly code use the below command,
 ```
 riscv64-unknown-elf-objdump -d <object filename>
 ```
+
 To use SPIKE simualtor to run risc-v obj file use the below command,
 ```
 spike pk <object filename>
@@ -42,7 +44,7 @@ To use SPIKE as debugger
 ```
 spike -d pk <object Filename> with degub command as until pc 0 <pc of your choice>
 ```  
-
+![spike_debugger_in_action](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Spike-debugger.PNG)
 ## 3. Introduction to ABI
 
 Words from [wiki](https://en.wikipedia.org/wiki/Application_binary_interface) In computer software, an application binary interface (ABI) is an interface between two binary program modules. Often, one of these modules is a library or operating system facility, and the other is a program that is being run by a user.
