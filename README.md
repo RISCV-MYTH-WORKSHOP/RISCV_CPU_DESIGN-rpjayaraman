@@ -15,6 +15,9 @@ This repository is the outcome of RISC-V MYTH (Microprocessor for You in Thirty 
 
 
       4.3 [Calculator - sequential Logic](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/README.md#43-calculator---sequential-logic)
+      
+      4.4 [Pipeline in Calculator](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/README.md#44-pipelined-logic)
+      4.5 [Validity in calculator](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#45-validity)
 
 
 ## 1. Introduction to RISC-V ISA
