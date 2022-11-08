@@ -22,7 +22,7 @@ This repository is the outcome of RISC-V MYTH (Microprocessor for You in Thirty 
       4.5 [Validity in calculator](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#45-validity)
       
 5. [Basic RISC-V CPU micro-architecture](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#5-basic-risc-v-cpu-micro-architecture)
-6. ![Acknowledgements] (https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#acknowledgements)
+6. [Acknowledgements] (https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#acknowledgements)
 
 ## 1. Introduction to RISC-V ISA
   ISA (Instruction Set Architecture ) defines the set of basic operations defines how the CPU is controlled by software. It is an interface between hardware and software. 
@@ -177,8 +177,8 @@ Then we started updating the code with pipeline logic and self checking conditio
    *passed = |cpu/xreg[15]>>5$value == (1+2+3+4+5+6+7+8+9);
 
 Finally added the remaining Arithmetic, Branch, Load, Jump instruction we completed the RISC V CPU design. 
-Makechip IDE: ![RISC V CPU](https://makerchip.com/sandbox/04xfJhN3W/0zmhGmo#)
-Final Code : ![CPU](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Day3_5/risc-v_solutions.tlv)
+Makechip IDE: [RISC V CPU](https://makerchip.com/sandbox/04xfJhN3W/0zmhGmo#)
+Final Code : [CPU](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Day3_5/risc-v_solutions.tlv)
 
 ![VIZ](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Final_VIZ.PNG)
 ![waveform](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Final-wave.PNG)
