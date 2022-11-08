@@ -8,8 +8,10 @@ This repository is the outcome of RISC-V MYTH (Microprocessor for You in Thirty 
 2. [GNU Compiler Toolchain](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#gnu-compiler-toolchain)
 3. [Introduction to ABI](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#3-introduction-to-abi)
 4. [Digital Logic with TL-Verilog and Makerchip](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#4-digital-logic-with-tl-verilog-and-makerchip)
-  4.1 [Playing with Makerchip](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#41-playing-with-makerchip)
-  4.2 [Calculator - Combinational Logic](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#42-calculator---combinational-logic)
+  
+      4.1 [Playing with Makerchip](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#41-playing-with-makerchip)
+    
+      4.2 [Calculator - Combinational Logic](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#42-calculator---combinational-logic)
 
 
 ## 1. Introduction to RISC-V ISA
@@ -52,6 +54,11 @@ To use SPIKE as debugger
 ```
 spike -d pk <object Filename> with degub command as until pc 0 <pc of your choice>
 ```  
+
+To view the registers we can use command as 
+```
+reg <core> <register name>.
+````
 ![spike_debugger_in_action](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Spike-debugger.PNG)
 ## 3. Introduction to ABI
 
