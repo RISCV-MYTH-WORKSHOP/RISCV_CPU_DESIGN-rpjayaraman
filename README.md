@@ -24,7 +24,7 @@ This repository is the outcome of RISC-V MYTH (Microprocessor for You in Thirty 
 5. [Basic RISC-V CPU micro-architecture](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#5-basic-risc-v-cpu-micro-architecture)
 
 
-6. [Acknowledgements] (https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#acknowledgements)
+6. [Acknowledgements](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#acknowledgements)
 
 ## 1. Introduction to RISC-V ISA
   ISA (Instruction Set Architecture ) defines the set of basic operations defines how the CPU is controlled by software. It is an interface between hardware and software. 
