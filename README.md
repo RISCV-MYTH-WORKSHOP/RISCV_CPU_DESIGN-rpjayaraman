@@ -9,6 +9,7 @@ This repository is the outcome of RISC-V MYTH (Microprocessor for You in Thirty 
 3. [Introduction to ABI](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#3-introduction-to-abi)
 4. [Digital Logic with TL-Verilog and Makerchip](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#4-digital-logic-with-tl-verilog-and-makerchip)
 
+
 ## 1. Introduction to RISC-V ISA
   ISA (Instruction Set Architecture ) defines the set of basic operations defines how the CPU is controlled by software. It is an interface between hardware and software. 
   
@@ -52,7 +53,7 @@ spike -d pk <object Filename> with degub command as until pc 0 <pc of your choic
 ![spike_debugger_in_action](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Spike-debugger.PNG)
 ## 3. Introduction to ABI
 
-Words from [wiki](https://en.wikipedia.org/wiki/Application_binary_interface) In computer software, an application binary interface (ABI) is an interface between two binary program modules. Often, one of these modules is a library or operating system facility, and the other is a program that is being run by a user.
+   In computer software, an application binary interface (ABI) is an interface between two binary program modules. Often, one of these modules is a library or operating system facility, and the other is a program that is being run by a user.Words from [wiki](https://en.wikipedia.org/wiki/Application_binary_interface)
 ABI is also called as system call interface used by the application program to access the registers specific to architecture. Since the MYTH workshop is using RISC-V architecture, it is good to know the register details in detail. 
 
 
@@ -62,6 +63,19 @@ There are around 32 registers in RISCV ISA, since only 5-bits are alloted for re
 
 ## 4. Digital Logic with TL-Verilog and Makerchip
 
-[Makerchip](https://makerchip.com/) is a free online environment for developing high-quality integrated circuits. You can code, compile, simulate, and debug Verilog designs, all from your browser. Your code, block diagrams, and waveforms are tightly integrated.
+  [Makerchip](https://makerchip.com/) is a free online environment for developing high-quality integrated circuits. You can code, compile, simulate, and debug Verilog designs, all from your browser. Your code, block diagrams, and waveforms are tightly integrated.
 
 All the examples shown below are done on Makerchip IDE using TL-verilog. Also there are other tutorials present on IDE which can be found [here](https://makerchip.com/sandbox/) under Tutorials section.
+
+### 4.1 Playing with Makerchip
+  Before start playing the game (Designing a RISC-V CPU) it is good to know/familiarize with the ground (IDE). So we were tasked to design some basic logic gates using TL-Verilog and explore the options/features in the makerchip platform.   
+Designed gates such as Inverted, Operations on gates, vector ,counter and Mux. 
+![Inverter](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/A-Inverter.PNG)
+![logic_operation](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/B-Logic_gates.PNG)
+![vector](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/C-Vector.PNG)
+![mux](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Mux.PNG)
+![mux_with_vector](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Mux_vector.PNG)
+![counter](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Free-running-counter.PNG)
+
+  
+
