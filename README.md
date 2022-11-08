@@ -8,6 +8,8 @@ This repository is the outcome of RISC-V MYTH (Microprocessor for You in Thirty 
 2. [GNU Compiler Toolchain](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#gnu-compiler-toolchain)
 3. [Introduction to ABI](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#3-introduction-to-abi)
 4. [Digital Logic with TL-Verilog and Makerchip](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#4-digital-logic-with-tl-verilog-and-makerchip)
+  4.1 [Playing with Makerchip](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#41-playing-with-makerchip)
+  4.2 [Calculator - Combinational Logic](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/edit/master/README.md#42-calculator---combinational-logic)
 
 
 ## 1. Introduction to RISC-V ISA
@@ -89,5 +91,13 @@ MUX with Vector
 Free running counter 
 ![counter](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Free-running-counter.PNG)
 
+## 4.2 Calculator - Combinational Logic
+  So the real learning started by designing a calculator. Beauty of the makerchip is there is no need for declaration for the variable used in the program unlike verilog. There is also no need to create testbench for simple logic such as calculator, makerchip provides random stimulus to the inputs. As you can observe the random values in the wavefor (bottom right corner).
   
+  
+Below is the snapshot of calculator with combinational logic.
+![combinational_logic](https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_nov22-rpjayaraman/blob/master/Images/Calculator_coninational_logic.PNG)
+
+
+
 
